@@ -1,0 +1,7 @@
+{
+  "name": "Creative Portfolio - Leeds Arts University Alumni",
+  "description": "A high-end, minimal React portfolio for a Fine Art graduate and Graphic Designer, featuring an AI-powered bio generator and professional project showcase.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
