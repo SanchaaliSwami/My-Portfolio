@@ -1,15 +1,27 @@
 
 export type Category = string;
 
+export interface SubProject {
+  id: string;
+  title: string;
+  mediaUrl: string;
+  mediaType: 'image' | 'video';
+  description?: string;
+  instagramUrl?: string;
+}
+
 export interface Project {
   id: string;
   title: string;
+  subtitle?: string;
   category: Category;
   description: string;
   mediaUrl: string;
   mediaType: 'image' | 'video';
   year: string;
   tags: string[];
+  subProjects?: SubProject[];
+  instagramUrl?: string;
 }
 
 export interface Experience {
