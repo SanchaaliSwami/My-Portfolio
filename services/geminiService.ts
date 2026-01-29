@@ -8,8 +8,8 @@ export const generateArtisticBio = async (name: string, background: string, styl
     const response = await ai.models.generateContent({
       model: 'gemini-3-flash-preview',
       contents: `Generate a professional and artistic bio for ${name}. 
-      Profile: BA Fine Art graduate from Leeds Arts University (2:1), Junior Creative Designer at Madhya Infosoft, and a Google UX Design candidate.
-      Expertise: Bridging traditional fine art (ink-on-wood, spatial installations) with high-growth digital branding (325k+ followers).
+      Profile: BA Fine Art graduate from Leeds Arts University (2:1), Junior Creative Designer at Madhya Infosoft, and pursuing a Google UI/UX Design certificate.
+      Expertise: Bridging traditional fine art aesthetics with high-growth digital branding (325k+ followers).
       Key details: ${background}. 
       Tone: Sophisticated, forward-thinking, and multidisciplinary.
       Artistic style: ${style}.
