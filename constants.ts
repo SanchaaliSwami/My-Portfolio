@@ -25,71 +25,71 @@ export const PROJECTS: Project[] = [
     subProjects: [
       {
         id: 'sw-1',
-        title: 'Material Study I: Resin & Rust',
-        mediaUrl: 'https://picsum.photos/seed/sw1/800/1000',
+        title: 'Charcoal',
+        mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769690814/IMG_6772_s6fxoj.jpg',
         mediaType: 'image',
         description: 'Exploring the intersection of industrial decay and modern synthetic materials.'
       },
       {
         id: 'sw-2',
         title: 'Large Format Charcoal',
-        mediaUrl: 'https://picsum.photos/seed/sw2/1000/800',
+        mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769690791/IMG_6820_sftf5v.jpg',
         mediaType: 'image',
         description: 'Gesticular drawing focusing on the anatomical tension of the human form.'
       },
       {
         id: 'sw-3',
-        title: 'Oil on Copper Study',
-        mediaUrl: 'https://picsum.photos/seed/sw3/800/800',
+        title: 'Ink',
+        mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769690786/IMG_7507_b36tlh.jpg',
         mediaType: 'image',
         description: 'Miniature portraits painted on reactive metal surfaces.'
       },
       {
         id: 'sw-4',
-        title: 'Studio Environment',
-        mediaUrl: 'https://picsum.photos/seed/sw4/1200/800',
+        title: 'Ink',
+        mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769690782/IMG_7511_fvad2c.jpg',
         mediaType: 'image',
         description: 'Documentation of the creative space at Leeds Arts University.'
       },
       {
         id: 'sw-5',
         title: 'Textile Manipulation',
-        mediaUrl: 'https://picsum.photos/seed/sw5/800/1000',
+        mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769690062/IMG_0860_balupg.jpg',
         mediaType: 'image',
         description: 'Deconstructing and reassembling reclaimed fabrics to create 3D forms.'
       },
       {
         id: 'sw-6',
         title: 'Abstract Ink Flow',
-        mediaUrl: 'https://picsum.photos/seed/sw6/800/1200',
+        mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769690410/IMG_7155_lrmqaf.jpg',
         mediaType: 'image',
         description: 'Studies in fluid dynamics using traditional Japanese sumi-e ink.'
       },
       {
         id: 'sw-7',
         title: 'Plaster Cast Series',
-        mediaUrl: 'https://picsum.photos/seed/sw7/800/800',
+        mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769690956/IMG_6461_eugs6h.jpg',
         mediaType: 'image',
         description: 'Negative space captures of everyday domestic objects.'
       },
       {
         id: 'sw-8',
         title: 'Color Theory: Ochre',
-        mediaUrl: 'https://picsum.photos/seed/sw8/800/1000',
+        mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769690407/IMG_7557_ui3fzy.jpg',
         mediaType: 'image',
         description: 'A monochrome exploration of natural pigments found in local soil.'
       },
       {
         id: 'sw-9',
         title: 'Digital Intervention',
-        mediaUrl: 'https://picsum.photos/seed/sw9/1200/800',
+        mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769690443/IMG_7553_blswvb.jpg',
         mediaType: 'image',
         description: 'Projecting digital glitches onto physical sculpture to test visual boundaries.'
       },
       {
         id: 'sw-10',
         title: 'Final Sketchbook Entry',
-        mediaUrl: 'https://picsum.photos/seed/sw10/800/1100',
+        mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769690407/IMG_7164_xv3ysx.jpg',
         mediaType: 'image',
         description: 'A concluding thought on the relationship between memory and material.'
       }
@@ -109,21 +109,21 @@ export const PROJECTS: Project[] = [
       {
         id: '5-1',
         title: 'Sensory Nodes',
-        mediaUrl: 'https://picsum.photos/seed/inst1/800/600',
+        mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769690424/IMG_7555_qkbvk8.jpg',
         mediaType: 'image',
         description: 'Detail of interactive points within the installation.'
       },
       {
         id: '5-2',
         title: 'Found Materials',
-        mediaUrl: 'https://picsum.photos/seed/inst2/800/600',
+        mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769690432/IMG_7547_jggrmu.jpg',
         mediaType: 'image',
         description: 'Study of objects used to build the narrative landscape.'
       },
       {
         id: '5-3',
         title: 'Shadow Play',
-        mediaUrl: 'https://picsum.photos/seed/inst3/800/600',
+        mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769690445/IMG_7552_d6aktb.jpg',
         mediaType: 'image',
         description: 'Lighting experiments conducted for the final exhibition.'
       }
@@ -210,7 +210,7 @@ export const PROJECTS: Project[] = [
     subtitle: 'Fitness With Sonali',
     category: 'Digital Products & Design',
     description: 'Multichannel promotional campaign for Fitness with Sonali. Designed and deployed assets to foster community participation in sustainable fitness growing the online community to more than 320000 followers',
-    mediaUrl: 'https://picsum.photos/seed/sanchaali2/1000/800',
+    mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769791440/Photo_from_S._S._dxpnev.jpg',
     mediaType: 'image',
     year: '2024',
     instagramUrl: 'https://www.instagram.com/sonali_swami',
@@ -218,22 +218,22 @@ export const PROJECTS: Project[] = [
     subProjects: [
       {
         id: '2-1',
-        title: '#FitFreeDumChallenge',
-        mediaUrl: 'https://www.instagram.com/reel/CbKaP66AWcQ/?igsh=MzZuMW14ODR2djdr',
-        mediaType: 'video',
+        title: '#FatFreeDumChallenge',
+        mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769791443/Photo_from_S._S._dqjyn6.jpg',
+        mediaType: 'image',
         description: 'Set of Instagram story templates designed for user interaction.'
       },
       {
         id: '2-2',
         title: '#JoinTheMovement',
-        mediaUrl: 'https://picsum.photos/seed/fit2/800/600',
+        mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769791447/Photo_from_S._S._bcqfwr.jpg',
         mediaType: 'image',
         description: 'Motion graphic used for the campaign launch.'
       },
       {
         id: '2-3',
         title: '#BallentineChallenge',
-        mediaUrl: 'https://picsum.photos/seed/fit3/800/600',
+        mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769790197/promo_6_pfphea.jpg',
         mediaType: 'image',
         description: 'Visual breakdown of growth metrics achieved during the movement.'
       }
@@ -241,35 +241,35 @@ export const PROJECTS: Project[] = [
   },
   {
     id: '4',
-    title: 'Branding Campaigns',
+    title: 'Client Campaigns',
     subtitle: 'Madhya Infosoft Pvt Ltd',
     category: 'Digital Products & Design',
     description: 'Orchestrated brand campaigns for clients with targeted graphics and video content to drive user-engagement and brand promotion.',
-    mediaUrl: 'https://picsum.photos/seed/sanchaali4/1000/1000',
+    mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769792660/Screenshot_2026-01-30-22-33-26-95_1c337646f29875672b5a61192b9010f9_abumlb.jpg',
     mediaType: 'image',
     year: '2024',
     tags: ['Video Content', 'UGC', 'Digital Marketing'],
     subProjects: [
       {
         id: '4-1',
-        title: 'UGC Compilation',
-        mediaUrl: 'https://picsum.photos/seed/bal1/800/600',
+        title: 'Falak Enterprise',
+        mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769792541/Screenshot_2026-01-30-22-28-20-03_1c337646f29875672b5a61192b9010f9_fjvjhq.jpg',
         mediaType: 'image',
-        description: 'Compilation of best user submissions during the challenge.'
+        description: 'Solar power'
       },
       {
         id: '4-2',
-        title: 'Brand Assets',
-        mediaUrl: 'https://picsum.photos/seed/bal2/800/600',
+        title: 'Falak Enterprise',
+        mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769792541/Screenshot_2026-01-30-22-29-04-96_1c337646f29875672b5a61192b9010f9_hxy0gn.jpg',
         mediaType: 'image',
-        description: 'Logo variants and stickers created for the TikTok filter.'
+        description: 'Solar power'
       },
       {
         id: '4-3',
-        title: 'Behind the Scenes',
-        mediaUrl: 'https://picsum.photos/seed/bal3/800/600',
+        title: 'ISRO',
+        mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769793060/Screenshot_2026-01-30-22-40-15-79_1c337646f29875672b5a61192b9010f9_nttgr2.jpg',
         mediaType: 'image',
-        description: 'Production shots from the main campaign video shoot.'
+        description: 'ISRO'
       }
     ]
   },
@@ -291,20 +291,6 @@ export const PROJECTS: Project[] = [
         mediaType: 'video',
         description: 'Core color palette and typography rules for the brand.'
       },
-      {
-        id: '6-2',
-        title: 'Carousel Design',
-        mediaUrl: 'https://picsum.photos/seed/strat2/800/600',
-        mediaType: 'video',
-        description: 'Educational carousel that went viral with 50k+ shares.'
-      },
-      {
-        id: '6-3',
-        title: 'Grid Planning',
-        mediaUrl: 'https://picsum.photos/seed/strat3/800/600',
-        mediaType: 'video',
-        description: 'Strategic visual mapping for a 3-month content cycle.'
-      }
     ]
   }
 ];
