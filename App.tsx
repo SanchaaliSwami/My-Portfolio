@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useMemo } from 'react';
 import { Category, Project } from './types';
 import { PROJECTS as INITIAL_PROJECTS, EXPERIENCES, SKILLS, EDUCATION } from './constants';
@@ -56,9 +55,10 @@ const App: React.FC = () => {
 
   const categories = useMemo(() => {
     const uniqueCategories = Array.from(new Set(projects.map(p => p.category)));
-    const priority = ['Fine Art', 'Exhibitions', 'Digital Products & Design', 'ANIMATION'];
+    const priority = ['Social Media Content & Branding', 'Fine Art', 'Exhibitions', 'Animation'];
     
-    uniqueCategories.sort((a, b) => {
+    // Explicitly type sort parameters to fix 'unknown' inference errors
+    uniqueCategories.sort((a: string, b: string) => {
       const indexA = priority.indexOf(a);
       const indexB = priority.indexOf(b);
       if (indexA !== -1 && indexB !== -1) return indexA - indexB;
@@ -257,8 +257,8 @@ const App: React.FC = () => {
             <div className="space-y-8">
                <p className="text-gray-400 text-[10px] uppercase tracking-[0.5em]">UK · IN · Global Connectivity</p>
                <div className="flex flex-col items-center gap-12 pt-8">
-                  <a href="mailto:hello@sanchaali.com" className="text-2xl md:text-4xl font-light hover:text-gray-400 transition-colors border-b border-black/10 pb-4">
-                    hello@sanchaali.com
+                  <a href="mailto:swamisanchaali@gmail.com" className="text-2xl md:text-4xl font-light hover:text-gray-400 transition-colors border-b border-black/10 pb-4">
+                    swamisanchaali@gmail.com
                   </a>
                   <div className="flex gap-12 items-center">
                     {['Instagram', 'LinkedIn', 'Portfolio'].map(social => (
