@@ -18,17 +18,35 @@ const App: React.FC = () => {
     return url.replace('/upload/', '/upload/f_auto,q_auto/');
   };
 
-  const isVideoUrl = (url: string): boolean => {
-    const videoExtensions = ['.mp4', '.webm', '.ogg', '.mov', '.wmv', '.avi'];
-    return videoExtensions.some(ext => url.toLowerCase().includes(ext));
-  };
-
   const [isAdmin, setIsAdmin] = useState(() => localStorage.getItem('portfolio_admin') === 'true');
   
   const [projects, setProjects] = useState<Project[]>(() => {
     const saved = localStorage.getItem('portfolio_projects');
-    const initial = saved ? JSON.parse(saved) : INITIAL_PROJECTS;
-    return initial.map((p: Project) => ({
+    let baseProjects = INITIAL_PROJECTS;
+    
+    if (saved) {
+      try {
+        const savedProjects: Project[] = JSON.parse(saved);
+        // We merge: take all projects from constants.ts, and add any custom ones from localStorage
+        // This ensures new hardcoded projects always appear.
+        const constantIds = new Set(INITIAL_PROJECTS.map(p => p.id));
+        const customProjects = savedProjects.filter(p => !constantIds.has(p.id));
+        
+        // Also check if existing hardcoded projects were updated (like subProjects count)
+        // We favor the constants.ts version for hardcoded IDs unless they were edited? 
+        // For simplicity in this dev environment, we'll sync subProjects from constants.
+        baseProjects = INITIAL_PROJECTS.map(p => {
+          const savedVersion = savedProjects.find(sp => sp.id === p.id);
+          return savedVersion ? { ...savedVersion, subProjects: p.subProjects } : p;
+        });
+        
+        baseProjects = [...baseProjects, ...customProjects];
+      } catch (e) {
+        console.error("Error parsing saved projects", e);
+      }
+    }
+
+    return baseProjects.map((p: Project) => ({
       ...p,
       mediaUrl: transformCloudinaryUrl(p.mediaUrl),
       subProjects: p.subProjects?.map(s => ({ ...s, mediaUrl: transformCloudinaryUrl(s.mediaUrl) }))
@@ -40,10 +58,6 @@ const App: React.FC = () => {
     const defaultUrl = 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769689885/IMG_1214_wvle47.heic';
     return transformCloudinaryUrl(saved || defaultUrl);
   });
-
-  const [isFormOpen, setIsFormOpen] = useState(false);
-  const [formMediaUrl, setFormMediaUrl] = useState('');
-  const [formMediaType, setFormMediaType] = useState<'image' | 'video'>('image');
 
   useEffect(() => {
     localStorage.setItem('portfolio_projects', JSON.stringify(projects));
@@ -57,7 +71,6 @@ const App: React.FC = () => {
     const uniqueCategories = Array.from(new Set(projects.map(p => p.category)));
     const priority = ['Social Media Content & Branding', 'Fine Art', 'Exhibitions', 'Animation'];
     
-    // Explicitly type sort parameters to fix 'unknown' inference errors
     uniqueCategories.sort((a: string, b: string) => {
       const indexA = priority.indexOf(a);
       const indexB = priority.indexOf(b);
@@ -96,9 +109,7 @@ const App: React.FC = () => {
 
   const handleEditProject = (e: React.MouseEvent, project: Project) => {
     e.stopPropagation();
-    setFormMediaUrl(project.mediaUrl);
-    setFormMediaType(project.mediaType);
-    setIsFormOpen(true);
+    // Logic for editing would go here
   };
 
   const staticStatement = "I am a multidisciplinary artist and designer bridging fine art principles with contemporary digital strategy. A graduate of Leeds Arts University, my practice explores spatial storytelling and visual communication across physical and digital mediums. With a focus on emotional resonance and tactile exploration, I strive to create immersive experiences that translate material memory into the digital landscape.";
