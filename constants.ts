@@ -41,7 +41,7 @@ export const PROJECTS: Project[] = [
         title: 'Digital illustration',
         mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769690439/IMG_7550_fyrc0t.jpg',
         mediaType: 'image',
-        description: 'Miniature portraits painted on reactive metal surfaces.'
+        description: ''
       },
       {
         id: 'da-4',
@@ -62,7 +62,7 @@ export const PROJECTS: Project[] = [
         title: 'Abstract Ink Flow',
         mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769690410/IMG_7155_lrmqaf.jpg',
         mediaType: 'image',
-        description: 'Studies in fluid dynamics using traditional Japanese sumi-e ink.'
+        description: ''
       },
       {
         id: 'da-7',
@@ -90,7 +90,7 @@ export const PROJECTS: Project[] = [
         title: 'Digital illustration',
         mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769690061/Digi_art_m_vfjsvq.png',
         mediaType: 'image',
-        description: 'Digital illustration'
+        description: ''
       }
     ]
 
@@ -100,7 +100,7 @@ export const PROJECTS: Project[] = [
     title: 'Sculpture and 3D Work',
     subtitle: 'A Collection of Academic & Personal Studies',
     category: 'Fine Art',
-    description: 'An expansive series of works produced within the Leeds Arts University studios. This collection represents a deep dive into material exploration, from tactile charcoal studies to experimental resin casting and traditional oil techniques.',
+    description: 'An expansive series of works produced within the Leeds Arts University studios. This collection represents a deep dive into material exploration, from wood, fabric, metal and clay.',
     mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769690954/IMG_6462_tau83v.jpg',
     mediaType: 'image',
     year: '2022-2025',
@@ -167,7 +167,7 @@ export const PROJECTS: Project[] = [
         title: 'Sculpture',
         mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769689902/IMG_2280_szlykp.jpg',
         mediaType: 'image',
-        description: 'Projecting digital glitches onto physical sculpture to test visual boundaries.'
+        description: ''
       }
     ]
   },
@@ -366,10 +366,10 @@ export const PROJECTS: Project[] = [
   },
   {
     id: '2',
-    title: 'Social Media Content',
+    title: 'Fitness Lifestyle Branding',
     subtitle: 'Fitness With Sonali',
     category: 'Social Media Content & Branding',
-    description: 'Multichannel promotional campaigns for Fitness with Sonali. Designed and deployed assets to foster community participation in sustainable fitness growing the online community to more than 320000 followers',
+    description: 'Multichannel promotional campaigns for Fitness with Sonali. Designed and deployed assets to foster community participation in sustainable fit and healthy lifestyle growing the online community to more than 320000 followers',
     mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769791440/Photo_from_S._S._dxpnev.jpg',
     mediaType: 'image',
     year: '2024',
@@ -473,7 +473,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: '4',
-    title: 'Client Campaigns',
+    title: 'Client Branding',
     subtitle: 'Madhya Infosoft Pvt Ltd',
     category: 'Social Media Content & Branding',
     description: 'Orchestrated brand campaigns for clients with targeted graphics and video content to drive user-engagement and brand promotion.',
