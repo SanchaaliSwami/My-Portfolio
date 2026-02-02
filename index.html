@@ -45,13 +45,14 @@
     /* Print Optimization for PDF Generation */
     @media print {
       @page {
-        margin: 2cm;
+        margin: 1.5cm;
       }
       body {
         background: white !important;
-        font-size: 11pt;
+        font-size: 10pt;
+        color: black !important;
       }
-      nav, footer, .filter-bar, button, .no-print {
+      nav, footer, .filter-bar, button, .no-print, .admin-control {
         display: none !important;
       }
       main {
@@ -71,15 +72,25 @@
       }
       .print-header {
         display: block !important;
-        margin-bottom: 3rem;
-        border-bottom: 2px solid #000;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #000;
         padding-bottom: 1rem;
       }
       .print-only {
         display: block !important;
       }
+      img {
+        max-width: 100% !important;
+        filter: brightness(1); /* Ensure no transparency issues */
+      }
+      .serif {
+        font-family: 'Cormorant+Garamond', serif !important;
+      }
     }
     .print-header {
+      display: none;
+    }
+    .print-only {
       display: none;
     }
   </style>
