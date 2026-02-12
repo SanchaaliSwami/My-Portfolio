@@ -52,6 +52,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
   if (!project || !featuredMedia) return null;
 
   const handleSubProjectClick = (sub: SubProject) => {
+    // Update the main featured media view within the modal
     setFeaturedMedia({
       url: sub.mediaUrl,
       type: sub.mediaType,
@@ -60,12 +61,9 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
       instagramUrl: sub.instagramUrl
     });
     
-    setFullScreenAsset({
-      url: sub.mediaUrl,
-      type: sub.mediaType,
-      title: sub.title
-    });
+    // REMOVED: setFullScreenAsset call to prevent opening the separate pop-up/lightbox automatically
     
+    // Smooth scroll to the top of the modal to show the updated featured media
     if (topRef.current) {
       topRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
@@ -76,7 +74,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
   return (
     <div className="fixed inset-0 z-[100] flex justify-center items-start p-4 bg-black/95 backdrop-blur-md transition-all overflow-y-auto custom-scrollbar">
       
-      {/* Lightbox Overlay */}
+      {/* Lightbox Overlay (Only triggered manually by clicking the main image) */}
       {fullScreenAsset && (
         <div 
           className="fixed inset-0 z-[200] bg-black flex flex-col items-center justify-center p-4 md:p-12 animate-in fade-in duration-300"
