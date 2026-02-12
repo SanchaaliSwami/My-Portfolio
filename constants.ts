@@ -368,7 +368,7 @@ export const PROJECTS: Project[] = [
         mediaUrl: 'https://res.cloudinary.com/def5zeuw2/image/upload/v1769689902/IMG_2280_szlykp.jpg',
         mediaType: 'image',
         description: ''
-      }
+      },
       {
         id: '5-1',
         title: 'LEVIATHON',
